@@ -106,6 +106,14 @@ def process_request(data):
     pass
 
 
+@app.get("/")
+async def root():
+    return {"message": "your receive_request endpoint is working"}
+
+@app.get("/receive_request")
+async def receive_request_get():
+    return {"message": "your receive_request endpoint is working"}
+
 @app.post("/receive_request")
 async def receive_request(request: Request, background_tasks: BackgroundTasks):
     data = await request.json() 
