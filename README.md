@@ -1,4 +1,4 @@
-# TDS Project 2 - LLM-based Quiz Solver
+# TDS Project 2 - LLM-based Data Analyst
 
 This project implements an automated system to solve dynamic quizzes using an LLM (Large Language Model). It consists of a FastAPI server that receives a task URL, generates a Python script using the AIPIPE API to solve the specific quiz on that page, and then executes the script to submit the answer.
 
